@@ -4,7 +4,7 @@ import mouse
 
 class Autoclicker:
 
-  def __process(self, cps, button):
+  def _process(self, cps, button):
     print("Auto-clicker started")
     delay = 1 / int(cps)
     while (True):
@@ -13,7 +13,7 @@ class Autoclicker:
       time.sleep(delay)
 
   def start(self, cps, button):
-    self.task = multiprocessing.Process(target=self.__process, args=(cps, button))
+    self.task = multiprocessing.Process(target=self._process, args=(cps, button))
     self.task.start()
 
   def stop(self):
