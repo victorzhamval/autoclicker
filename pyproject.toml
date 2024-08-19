@@ -1,0 +1,15 @@
+[project]
+name = "auto-clicker"
+description = "A very basic version of an auto-clicker"
+version = "0.1"
+authors = [{name = "Victor Zhamval", email = "victorzhamval@gmail.com"}]
+keywords = ["autoclicker", "clicker", "click"]
+classifiers = [
+  "Programming Language :: Python"
+]
+dependencies = [
+    "mouse",
+    "keyboard"
+]
+readme = "README.md"
+license = {text = "MIT License"}
